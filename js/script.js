@@ -48,7 +48,7 @@ if(eta < 18){
 let prezzoUmano = prezzoTotale.toFixed(2); 
 
 const pPrezzoFinale = document.getElementById("prezzo-finale");
-pPrezzoFinale.innerText = prezzoUmano;
+pPrezzoFinale.innerText = prezzoUmano + " " + "euro";
 
 // EXTRA per STAMPA BIGLIETTO
 

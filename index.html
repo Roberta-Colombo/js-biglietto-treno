@@ -1,28 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Biglietto treno</title>
 </head>
+
 <body>
-    <div class="biglietto d-flex">
+    <div class="biglietto">
         <h3>Tratta di validità biglietto:</h3>
-        <p id="from"></p>
-        <p id="to"></p>
+        <div class="tratta d-flex flex-start">
+            <p class="partenza"><strong>Partenza:</strong>
+            <p id="from"></p>
+            </p>
+            <p class="arrivo"><strong>Arrivo:</strong>
+            <p id="to"></p>
+            </p>
+        </div>
+        <br>
 
-        <h3>Prezzo finale:</h3>
-        <p id="prezzo-finale"></p>
+        <div class="importo">
+            <div class="prezzo d-flex flex-end">
+                <h4>Prezzo finale:</h4>
+                <p id="prezzo-finale"></p>
+            </div>
 
-        <h4>Sconto applicato:</h4>
-        <p id="sconto-minori"></p>
-        <p id="sconto-over65"></p>
-        <p id="prezzo-pieno"></p>
+            <div class="sconto d-flex flex-end">
+                <h4>Sconto applicato:</h4>
+                <p id="sconto-minori"></p>
+                <p id="sconto-over65"></p>
+                <p id="prezzo-pieno"></p>
+            </div>
+        </div>
     </div>
 
 
 
     <script src="./js/script.js"></script>
 </body>
+
 </html>
