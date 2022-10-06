@@ -45,7 +45,9 @@ if(eta < 18){
     console.log("Prezzo pieno");
 }
 
+let prezzoUmano = prezzoTotale.toFixed(2); 
+
 const pPrezzoFinale = document.getElementById("prezzo-finale");
-pPrezzoFinale.innerText = prezzoTotale;
+pPrezzoFinale.innerText = prezzoUmano;
 
 
