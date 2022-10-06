@@ -18,6 +18,8 @@
     justify-content: flex-end;
 }
 
+/* Style biglietto */
+
 .biglietto {
     width: 50%;
     height: 200px;
@@ -68,11 +70,15 @@ h3 {
 }
 
 .numero-biglietto {
-    position: absolute;
+    position: relative;
     bottom: 35%;
+    top: 60%;
 }
 
 .i {
     font-size: 2.5rem;
-    margin-right: 10px;
+}
+
+.numero-biglietto p {
+    padding-left: 10px;
 }
