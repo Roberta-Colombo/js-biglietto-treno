@@ -28,10 +28,16 @@ console.log(eta);
 let prezzoTotale = 0.21 * km;
 console.log(prezzoTotale);
 
-let prezzoMinorenni = (prezzoTotale * 20) / 100;
+let scontoMinorenni = (prezzoTotale * 20) / 100;
+console.log(scontoMinorenni);
+
+let prezzoMinorenni = prezzoTotale - scontoMinorenni;
 console.log(prezzoMinorenni);
 
-let prezzoOver65 = (prezzoTotale * 40) / 100;
+let scontoOver65 = (prezzoTotale * 40) / 100;
+console.log(scontoOver65);
+
+let prezzoOver65 = prezzoTotale - scontoOver65;
 console.log(prezzoOver65);
 
 if(eta < 18){
@@ -71,10 +77,10 @@ const bigliettoOver65 = document.getElementById("sconto-over65");
 const bigliettoPrezzoPieno = document.getElementById("prezzo-pieno");
 
 if(eta < 18){
-    bigliettoMinori.innerText = "Sconto del 20%";
+    bigliettoMinori.innerText = "sconto del 20%";
 } else if (eta > 65){
-    bigliettoOver65.innerText = "Sconto del 40%";
+    bigliettoOver65.innerText = "sconto del 40%";
 } else {
-    bigliettoPrezzoPieno.innerText = "Prezzo pieno";
+    bigliettoPrezzoPieno.innerText = "prezzo pieno";
 }
 
