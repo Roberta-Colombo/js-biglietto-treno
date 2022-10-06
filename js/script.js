@@ -16,6 +16,36 @@ SE età<18
 SE età>65 
     prezzo - 40%; 
 
-output prezzo trasformato con max. due decimali.
+output prezzo trasformato con max. due decimali. */
+
+const km = prompt("Quanti km devi percorrere?");
+
+const eta = prompt("Qual è la tua età?");
+
+console.log(km);
+console.log(eta);
+
+let prezzoTotale = 0.21 * km;
+console.log(prezzoTotale);
+
+const prezzoMinorenni = (prezzoTotale * 20) / 100;
+console.log(prezzoMinorenni);
+
+const prezzoOver65 = (prezzoTotale * 40) / 100;
+console.log(prezzoOver65);
+
+if(eta < 18){
+    prezzoTotale = prezzoMinorenni;
+    console.log("Sconto del 20%");
+} else if (eta > 65){
+    prezzoTotale = prezzoOver65;
+    console.log("Sconto over 65");
+} else {
+    prezzoTotale;
+    console.log("Prezzo pieno");
+}
+
+const pPrezzoFinale = document.getElementById("prezzo-finale");
+pPrezzoFinale.innerText = prezzoTotale;
 
 
