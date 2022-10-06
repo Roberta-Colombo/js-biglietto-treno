@@ -65,28 +65,16 @@ const bigliettoTo = document.getElementById("to");
 bigliettoTo.innerText = to;
 
 const bigliettoMinori = document.getElementById("sconto-minori");
-bigliettoMinori.innerText = "Sconto del 20%";
 
 const bigliettoOver65 = document.getElementById("sconto-over65");
-bigliettoOver65.innerText = "Sconto del 40%";
 
 const bigliettoPrezzoPieno = document.getElementById("prezzo-pieno");
-bigliettoPrezzoPieno.innerText = "Prezzo pieno";
-
-// if(eta < 18){
-//     bigliettoMinori.innerText = "Sconto del 20%";
-// } else if (eta > 65){
-//     bigliettoOver65.innerText = "Sconto del 40%";
-// } else {
-//     bigliettoPrezzoPieno.innerText = "Prezzo pieno";
-// }
 
 if(eta < 18){
-    prezzoMinorenni = bigliettoMinori;
-
+    bigliettoMinori.innerText = "Sconto del 20%";
 } else if (eta > 65){
-    prezzoOver65 = bigliettoOver65;
-  
+    bigliettoOver65.innerText = "Sconto del 40%";
 } else {
-    prezzoTotale = bigliettoPrezzoPieno;
+    bigliettoPrezzoPieno.innerText = "Prezzo pieno";
 }
+
