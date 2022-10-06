@@ -24,12 +24,11 @@
     width: 50%;
     height: 200px;
     border: 1px solid rgb(125,4,7);
-    /* background: rgb(255,255,255); */
     background: linear-gradient(90deg, rgba(255,255,255,1) 25%, rgba(184,23,38,1) 80%, rgba(125,4,7,1) 100%);    
-    /* background-color: rgba(220, 20, 60, 0.24); */
     padding: 40px 50px;
     margin-top: 2rem;
     margin-left: 2rem;
+    position: relative;
 }
 
 .tratta {
@@ -64,15 +63,14 @@ h3 {
     padding-top: 5px;
     padding-bottom: 5px;
     padding-right: 5px;
-    position: relative;
-    left: 55%;
+    position: absolute;
+    left: 45%;
     bottom: 5%;
 }
 
 .numero-biglietto {
-    position: relative;
-    bottom: 35%;
-    top: 60%;
+    position: absolute;
+    top: 80%;
 }
 
 .i {
