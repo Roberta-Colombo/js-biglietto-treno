@@ -50,4 +50,33 @@ let prezzoUmano = prezzoTotale.toFixed(2);
 const pPrezzoFinale = document.getElementById("prezzo-finale");
 pPrezzoFinale.innerText = prezzoUmano;
 
+// EXTRA per STAMPA BIGLIETTO
 
+const from = prompt("Da quale città parti?");
+console.log(from);
+
+const to = prompt("Qual è la città di arrivo?");
+console.log(to);
+
+const bigliettoFrom = document.getElementById("from");
+bigliettoFrom.innerText = from;
+
+const bigliettoTo = document.getElementById("to");
+bigliettoTo.innerText = to;
+
+const bigliettoMinori = document.getElementById("sconto-minori");
+bigliettoMinori.innerText = "Sconto del 20%";
+
+const bigliettoOver65 = document.getElementById("sconto-over65");
+bigliettoOver65.innerText = "Sconto del 40%";
+
+const bigliettoPrezzoPieno = document.getElementById("prezzo-pieno");
+bigliettoPrezzoPieno.innerText = "Prezzo pieno";
+
+if(eta < 18){
+    bigliettoMinori;
+} else if (eta > 65){
+   bigliettoOver65;
+} else {
+    bigliettoPrezzoPieno;
+}
